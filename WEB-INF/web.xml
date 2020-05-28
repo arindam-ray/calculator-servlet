@@ -1,0 +1,29 @@
+<web-app>
+<display-name> Servlet - Basic Calculator  </display-name>
+<description>  Addition,Subtraction, Multiplication, Division  </description>
+
+<welcome-file-list>  
+   <welcome-file>calculator.html</welcome-file>  
+   <welcome-file>index.html</welcome-file>  
+</welcome-file-list> 
+
+
+<servlet>
+   <servlet-name>Servlet1</servlet-name>
+   <servlet-class>Calculator</servlet-class>
+   <init-param> </init-param>
+</servlet>
+
+<servlet-mapping>
+   <servlet-name>Servlet1</servlet-name>
+   <url-pattern>/calc</url-pattern>
+</servlet-mapping>
+
+ 
+
+<session-config>
+   <session-timeout>1</session-timeout>
+</session-config>
+
+
+</web-app>
